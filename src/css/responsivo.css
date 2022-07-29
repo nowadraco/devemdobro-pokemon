@@ -32,8 +32,6 @@
 }
 
 @media (max-width: 320px) {
-    main{background-color: red;}
-    
     .pokemon-slider {
         padding: 0 15px;
         gap: 10px;
