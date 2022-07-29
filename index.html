@@ -13,78 +13,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? família=Outfit&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
 </head>
 
 <body>
-    <header>
-        <img src="src/imagens/pokebola.png" alt="Pokébola">
-        <h1>MapaDev Week
+    <header class="cabecalho">
+        <img src="src/imagens/pokebola.png" alt="Pokébola" class="pokebola">
+        <h1 class="titulo">MapaDev Week
             </h1>
     </header>
 
-    <main>
-        <button>
+    <main class="pokemon-slide">
+        <button class="btn-seta btn-voltar">
             <img src="src/imagens/seta.png" alt="seta voltar">
         </button>
 
-        <ul>
-            <li>
-                <div>
-                    <h2>Pikachu</h2>
-                    <p>HP 300</p>
+        <ul class="lista-pokemons">
+            <li class="cartao selecionado fundo-1">
+                <div class="informacoes">
+                    <h2 class="nome">Pikachu</h2>
+                    <p class="vida">HP 300</p>
                 </div>
 
-                <div>
-                    <img src="src/imagens/pikachu.png" alt="Pikachu">
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/pikachu.png" alt="Pikachu" class="imagem-pokemon">
                 </div>
 
-                <div>
-                    <h3>Discrição</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis pariatur culpa eaque. Aspernatur,
-                        nulla. Molestias ad eius distinctio, dolores libero a iusto accusantium quasi corporis id illo,
-                        tempore ullam ipsa?</p>
-                </div>
-
-            </li>
-            <li>
-                <div>
-                    <h2>Charizard</h2>
-                    <p>HP 800</p>
-                </div>
-
-                <div>
-                    <img src="src/imagens/charizard.png" alt="charizard">
-                </div>
-
-                <div>
-                    <h3>Discrição</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem qui repudiandae adipisci
-                        quam, cumque fuga itaque eius accusamus alias obcaecati minima nisi tempora repellat tenetur
-                        possimus consequatur nesciunt inventore ut</p>
+                <div class="discricao">
+                    <h3 class="titulo">Discrição</h3>
+                    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptates animi inventore temporibus atque tenetur nostrum quaerat, deserunt corporis ipsum earum sint, fuga molestiae minima ea maiores quis fugit ducimus?</p>
                 </div>
 
             </li>
-            <li>
-                <div>
-                    <h2>Mewtwo</h2>
-                    <p>HP 1200</p>
+            <li class="cartao fundo-2">
+                <div class="informacoes">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="vida">HP 800</p>
                 </div>
 
-                <div>
-                    <img src="src/imagens/mewtwo.png" alt="Mewtwo">
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/charizard.png" alt="charizard" class="imagem-pokemon">
                 </div>
 
-                <div>
-                    <h3>Discrição</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus distinctio quisquam,
-                        voluptate delectus tempora eveniet, atque minima nemo excepturi temporibus eius vitae ipsa
-                        officiis? Excepturi itaque neque tempore nam?</p>
+                <div class="discricao">
+                    <h3 class="titulo">Discrição</h3>
+                    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptates animi inventore temporibus atque tenetur nostrum quaerat, deserunt corporis ipsum earum sint, fuga molestiae minima ea maiores quis fugit ducimus?</p>
+                </div>
+
+            </li>
+            <li class="cartao fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtwo</h2>
+                    <p class="vida">HP 1200</p>
+                </div>
+
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/mewtwo.png" alt="mewtwo" class="imagem-pokemon">
+                </div>
+
+                <div class="discricao">
+                    <h3 class="titulo">Discrição</h3>
+                    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptates animi inventore temporibus atque tenetur nostrum quaerat, deserunt corporis ipsum earum sint, fuga molestiae minima ea maiores quis fugit ducimus?</p>
                 </div>
 
             </li>
         </ul>
 
-        <button>
+        <button class="btn-seta">
             <img src="src/imagens/seta.png" alt="seta avançar">
         </button>
 
