@@ -36,7 +36,6 @@ btnAvancar.addEventListener('click', function () {
 });
 
 btnvoltar.addEventListener('click', function(){
-
     if(cartaoAtual === 0) return;
 
     esconderCartaoSelecionado();
