@@ -16,27 +16,31 @@ const btnvoltar = document.getElementById('btn-voltar');
 const cartoes = document.querySelectorAll('.cartao');
 let cartaoAtual = 0;
 
-function esconderCartaoselecionado(){
-    const cataoSelecionado = document.querySelectorAll('selecionado')
-    cataoSelecionado.classList.remove('.selecionado')
+function esconderCartaoSelecionado() {
+    const cataoSelecionado = document.querySelector('.selecionado')
+    cataoSelecionado.classList.remove('selecionado')
 }
 
-btnAvancar.addEventListener('click', function(){
+function mostrarCartao(indiceCartao){
+    cartoes[indiceCartao].classList.add('selecionado');
+}
+
+btnAvancar.addEventListener('click', function () {
     if(cartaoAtual === cartoes.length - 1) return;
 
-    esconderCartaoselecionado();
+    esconderCartaoSelecionado();
 
     cartaoAtual++;
-    cartoes[cartaoAtual].classList.add('selecionado');
+    mostrarCartao(cartaoAtual);
 
-})
+});
 
 btnvoltar.addEventListener('click', function(){
 
     if(cartaoAtual === 0) return;
 
-    esconderCartaoselecionado();
+    esconderCartaoSelecionado();
 
-    cartaoAtual--
-    cartoes[cartaoAtual].classList.add('selecionado');
-})
+    cartaoAtual--;
+    mostrarCartao(cartaoAtual);
+});
